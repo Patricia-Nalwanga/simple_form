@@ -1,0 +1,34 @@
+<div class="container"
+     fxLayout="column" 
+     fxFlexFill>
+     
+     
+
+
+<form noValidate [formGroup]='userInput'class="form-group">
+ <div fxFlex>
+ <mat-form-field>
+  <input  formControlName='firstname' type='text' placeholder="firstname" >
+</mat-form-field>
+ <!-- <p>{{userInput.get('firstname').value}}</p> -->
+</div>
+
+<div fxFlex>
+<mat-form-field>
+<input formControlName='lastname' type='text' placeholder="lastname">
+</mat-form-field>
+</div>
+
+<div fxflex>
+<mat-form-field>
+<input formControlName='email'type='email' placeholder="email">
+</mat-form-field>
+</div>
+
+<div fxFlex>
+<mat-form-field>
+<input  formControlName='password' type='password' placeholder="password">
+</mat-form-field>
+</div> 
+</form>
+</div>
