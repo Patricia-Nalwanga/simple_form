@@ -1,34 +1,52 @@
-<div class="container"
-     fxLayout="column" 
-     fxFlexFill>
-     
-     
+<div class="container">
+  <mat-card class="form-container">
+    <mat-card-title>USER LOGIN</mat-card-title>
 
+    <form noValidate [formGroup]="userInput" class="form-group">
+      <div class="flex-container">
+        <div>
+          <mat-form-field>
+            <input
+              class="input-field"
+              matInput
+              formControlName="username"
+              type="text"
+              placeholder="username"
+            />
+          </mat-form-field>
+          <span class="flex-spacer"></span>
+          <i class="fas fa-user"></i>
+          <!-- <p>{{userInput.get('firstname').value}}</p> -->
+        </div>
 
-<form noValidate [formGroup]='userInput'class="form-group">
- <div fxFlex>
- <mat-form-field>
-  <input  formControlName='firstname' type='text' placeholder="firstname" >
-</mat-form-field>
- <!-- <p>{{userInput.get('firstname').value}}</p> -->
-</div>
+        <div>
+          <mat-form-field>
+            <input
+              class="input-field"
+              matInput
+              formControlName="email"
+              type="email"
+              placeholder="email"
+            />
+          </mat-form-field>
+          <span class="flex-specer"></span>
+          <i class="far fa-envelope"></i>
+        </div>
 
-<div fxFlex>
-<mat-form-field>
-<input formControlName='lastname' type='text' placeholder="lastname">
-</mat-form-field>
-</div>
-
-<div fxflex>
-<mat-form-field>
-<input formControlName='email'type='email' placeholder="email">
-</mat-form-field>
-</div>
-
-<div fxFlex>
-<mat-form-field>
-<input  formControlName='password' type='password' placeholder="password">
-</mat-form-field>
-</div> 
-</form>
+        <div>
+          <mat-form-field>
+            <input
+              class="input-field"
+              matInput
+              formControlName="password"
+              type="password"
+              placeholder="password"
+            />
+          </mat-form-field>
+          <span class="flex-specer"></span>
+          <i class="fas fa-unlock-alt"></i>
+        </div>
+      </div>
+    </form>
+  </mat-card>
 </div>

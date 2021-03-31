@@ -5,7 +5,8 @@ import{FormsModule} from '@angular/forms';
 import{MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import{MatDividerModule} from '@angular/material/divider';
+import{MatCardModule} from '@angular/material/card';
+// import{MatDividerModule} from '@angular/material/divider';
 
 import { AppComponent } from './app.component';
 import { Form1Component } from './form1/form1.component';
@@ -22,7 +23,7 @@ import { Form1Component } from './form1/form1.component';
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatDividerModule,
+    MatCardModule,
     FlexLayoutModule
     
   ],
