@@ -6,6 +6,9 @@ import{MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import{MatCardModule} from '@angular/material/card';
+import{MatButtonModule} from '@angular/material/button';
+import{MatIconModule} from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import{MatDividerModule} from '@angular/material/divider';
 
 import { AppComponent } from './app.component';
@@ -24,7 +27,9 @@ import { Form1Component } from './form1/form1.component';
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatButtonModule,
+    BrowserAnimationsModule 
     
   ],
   providers: [],
