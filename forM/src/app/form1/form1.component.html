@@ -1,7 +1,9 @@
 <div class="container">
+  <div class="raised-card">
   <mat-card class="form-container">
-    <mat-card-title>USER LOGIN</mat-card-title>
-
+    <mat-card-title>LOGIN</mat-card-title>
+    
+<mat-card-content>
     <form
       noValidate
       [formGroup]="userInput"
@@ -9,8 +11,9 @@
       (ngSubmit)="onSubmit()"
       #fform='ngForm'
     >
-      <div class="flex-container">
-        <mat-label>Username</mat-label>
+      <mat-label>Username</mat-label>
+      <span class="flex-spacer"></span>
+          <i class="fas fa-user"></i>
         <div>
           <mat-form-field>
             <input
@@ -20,15 +23,17 @@
               type="text"
             />
           </mat-form-field>
-          <span class="flex-spacer"></span>
-          <i class="fas fa-user"></i>
-          <!-- <p>{{userInput.get('username').value}}</p> -->
+          
+          <p>{{userInput.get('username').value}}</p>
           </div>
         <p><mat-error *ngIf="userInput.get('username').hasError('required')
           && userInput.get('username').touched">
-            Username required</mat-error></p>
+            Username required</mat-error>
+          </p>
 
         <mat-label>Email</mat-label>
+        <span class="flex-specer"></span>
+          <i class="far fa-envelope"></i>
         <div>
           <mat-form-field>
             <input
@@ -38,14 +43,15 @@
               type="email"
             />
           </mat-form-field>
-          <span class="flex-specer"></span>
-          <i class="far fa-envelope"></i>
+          
         </div>
         <p><mat-error *ngIf="userInput.get('email').hasError('required')
           && userInput.get('email').touched">
             Email required</mat-error></p>
 
         <mat-label>Password</mat-label>
+        <span class="flex-specer"></span>
+          <i mat-icon-button class="fas fa-unlock-alt"></i>
         <div>
           <mat-form-field>
             <input
@@ -55,15 +61,16 @@
               type="password"
             />
           </mat-form-field>
-          <span class="flex-specer"></span>
-          <i mat-icon-button class="fas fa-unlock-alt"></i>
+          
         </div>
         <p><mat-error *ngIf="userInput.get('password').hasError('required')
           && userInput.get('password').touched">
             Password required</mat-error></p>
 
         <button mat-raised-button type="submit">Submit</button>
-      </div>
+      
     </form>
+  </mat-card-content>
   </mat-card>
+</div>
 </div>

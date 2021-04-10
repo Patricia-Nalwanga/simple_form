@@ -1,48 +1,51 @@
-.container{
-    background-image: url("/assets/black women in tech.jpg");
-    background-repeat: no-repeat;
-    background-position: right top;
+/* .container {
+  background-image: url("/assets/black women in tech.jpg");
+   
+
+  background-position: right top;
+  background-repeat: no-repeat;
+} */
+.raised-card > .form-container{
+  box-shadow: 10px 10px 20px gray;
 }
-.flex-container {
-  background-color: rgb(65, 204, 250);
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+  background-image: url("/assets/black women in tech.jpg");
+  width: 25em;
+  height: 25em;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  margin-left: 270px;
+  
+}
+
+
+/* .flex-container {
+  background-image: url("/assets/black women in tech.jpg");
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 500px;
-  width: 25em;
-}
+  /* height: 27em;
+  width: 35em; */
+/* }
 
 .flex-container > div {
   margin: auto;
-  border-style: solid;
-  border-radius: 12px;
-  
-  
-}
+} */
 
-.form-container {
-    border-style: solid;
-    width: 25em;
-    text-align: center;
-    font-size: larger;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    color: grey;
-    
-} 
-
-.form-container > mat-card-title
-{
+.form-container > mat-card-title {
   font-size: 30px;
-  font-family: 'Quattrocento Sans', sans-serif;
-   
+  font-family: "Quattrocento Sans", sans-serif;
 }
- 
-p{
+
+p {
   color: red;
   font-size: 15px;
 }
-
-
-
