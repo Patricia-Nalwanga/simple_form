@@ -1,76 +1,119 @@
-<div class="container">
+<div class="big-container">
   <div class="raised-card">
-  <mat-card class="form-container">
-    <mat-card-title>LOGIN</mat-card-title>
-    
-<mat-card-content>
-    <form
-      noValidate
-      [formGroup]="userInput"
-      class="form-group"
-      (ngSubmit)="onSubmit()"
-      #fform='ngForm'
-    >
-      <mat-label>Username</mat-label>
-      <span class="flex-spacer"></span>
-          <i class="fas fa-user"></i>
-        <div>
-          <mat-form-field>
-            <input
-              class="input-field"
-              matInput
-              formControlName="username"
-              type="text"
-            />
-          </mat-form-field>
+    <mat-card class="form-container">
+      <mat-card-header>
+        <mat-card-title>LOGIN</mat-card-title>
+      </mat-card-header>
+      <div class="container">
+        <div class="row">
           
-          <p>{{userInput.get('username').value}}</p>
-          </div>
-        <p><mat-error *ngIf="userInput.get('username').hasError('required')
-          && userInput.get('username').touched">
-            Username required</mat-error>
-          </p>
 
-        <mat-label>Email</mat-label>
-        <span class="flex-specer"></span>
-          <i class="far fa-envelope"></i>
-        <div>
-          <mat-form-field>
-            <input
-              class="input-field"
-              matInput
-              formControlName="email"
-              type="email"
-            />
-          </mat-form-field>
+        <mat-card-content>
+          <div class="col-sm-6">
+            <img class ="persona"
+                class ="img-responsive"
+                class ="img-thumbnail"
+         
+             mat-card-image
+             src="./assets/persona.svg"
+             alt="hey there"/>
+           </div>
+          <div class = "col-sm-6">
+          <form
+            noValidate
+            [formGroup]="userInput"
+            class="form-group"
+            (ngSubmit)="onSubmit()"
+            #fform="ngForm"
+          >
           
+            <mat-label>Username</mat-label>
+            <span class="flex-spacer"></span>
+            <i class="fas fa-user"></i>
+
+            <div class="user-name">
+              <mat-form-field>
+                <input
+                  class="input-field"
+                  matInput
+                  formControlName="username"
+                  type="text"
+                />
+              </mat-form-field>
+            </div>
+
+            <p>{{ userInput.get("username").value }}</p>
+
+            <p>
+              <mat-error
+                *ngIf="
+                  userInput.get('username').hasError('required') &&
+                  userInput.get('username').touched
+                "
+              >
+                Username required</mat-error
+              >
+            </p>
+
+            <mat-label>Email</mat-label>
+            <span class="flex-specer"></span>
+            <i class="far fa-envelope"></i>
+
+            <div class="user-name">
+              <mat-form-field>
+                <input
+                  class="input-field"
+                  matInput
+                  formControlName="email"
+                  type="email"
+                />
+              </mat-form-field>
+            </div>
+
+            <p>
+              <mat-error
+                *ngIf="
+                  userInput.get('email').hasError('required') &&
+                  userInput.get('email').touched
+                "
+              >
+                Email required</mat-error
+              >
+            </p>
+
+            <mat-label>Password</mat-label>
+            <span class="flex-specer"></span>
+            <i mat-icon-button class="fas fa-unlock-alt"></i>
+
+            <div class="user-name">
+              <mat-form-field>
+                <input
+                  class="input-field"
+                  matInput
+                  formControlName="password"
+                  type="password"
+                />
+              </mat-form-field>
+            </div>
+            <p>
+              <mat-error
+                *ngIf="
+                  userInput.get('password').hasError('required') &&
+                  userInput.get('password').touched
+                "
+              >
+                Password required</mat-error
+              >
+            </p>
+
+            <button mat-raised-button type="submit">Submit</button>
+          
+          </form>
         </div>
-        <p><mat-error *ngIf="userInput.get('email').hasError('required')
-          && userInput.get('email').touched">
-            Email required</mat-error></p>
-
-        <mat-label>Password</mat-label>
-        <span class="flex-specer"></span>
-          <i mat-icon-button class="fas fa-unlock-alt"></i>
-        <div>
-          <mat-form-field>
-            <input
-              class="input-field"
-              matInput
-              formControlName="password"
-              type="password"
-            />
-          </mat-form-field>
-          
-        </div>
-        <p><mat-error *ngIf="userInput.get('password').hasError('required')
-          && userInput.get('password').touched">
-            Password required</mat-error></p>
-
-        <button mat-raised-button type="submit">Submit</button>
-      
-    </form>
-  </mat-card-content>
-  </mat-card>
-</div>
+        
+        </mat-card-content>
+      </div>
+      </div>
+    </mat-card>
+  </div>
 </div>

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {AppRoutingModule} from './app-routing/app-routing.module';
 import{ReactiveFormsModule} from '@angular/forms';
 import{FormsModule} from '@angular/forms';
 import{MatFormFieldModule} from '@angular/material/form-field';
@@ -13,12 +14,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { Form1Component } from './form1/form1.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
 
   declarations: [
     AppComponent,
-    Form1Component
+    Form1Component,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,8 @@ import { Form1Component } from './form1/form1.component';
     MatCardModule,
     FlexLayoutModule,
     MatButtonModule,
-    BrowserAnimationsModule 
+    BrowserAnimationsModule ,
+    AppRoutingModule
     
   ],
   providers: [],

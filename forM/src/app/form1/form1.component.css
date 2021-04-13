@@ -1,30 +1,51 @@
-/* .container {
-  background-image: url("/assets/black women in tech.jpg");
-   
-
-  background-position: right top;
-  background-repeat: no-repeat;
+/* * {
+  box-sizing: border-box;
 } */
-.raised-card > .form-container{
+.raised-card > .form-container {
   box-shadow: 10px 10px 20px gray;
 }
 .form-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  
-  background-image: url("/assets/black women in tech.jpg");
-  width: 25em;
-  height: 25em;
+  width: 30em;
+  height: 20em;
   text-align: center;
   font-size: larger;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   margin-left: 270px;
+
+
   
 }
 
+.container {
+  position: st;
+  display: flex;
+  align-items: center;
+  padding: 35px;
+  flex-direction: row;
+  justify-content: center;
+
+  align-items: center;
+
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.img-thumbnail {
+  position: absolute;
+  left: -13em;
+  width: 300px;
+  height: 300px;
+}
+
+.user-name {
+  border-bottom: solid;
+  width: 10em;
+  margin-left: 20px;
+}
 
 /* .flex-container {
   background-image: url("/assets/black women in tech.jpg");
@@ -48,4 +69,13 @@
 p {
   color: red;
   font-size: 15px;
+}
+.col-sm-6 {
+  position: absolute;
+  background-color: lightblue;
+  width: 270px;
+  height: 300px;
+  bottom: 50px;
+
+/* top:0; right:0; height:100%; */
 }
